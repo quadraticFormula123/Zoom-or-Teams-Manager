@@ -14,11 +14,18 @@ while (another_meeting == "yes"):
     date = input("Enter the meeting date (YYYY-MM-DD): ") 
     time = input("Enter the meeting time (HH:MM) in 24 hour form. eg 15:26")
     another_meeting = input("Do you want to add another meeting?")
-\
+
 
 while (1==1):
-    currentTime = datetime.now().strftime("%H:%M").str()
-    print(currentTime)
+    currentTime = datetime.now().strftime("%H:%M")
+    currentDate = datetime.now().strftime("%Y-%m-%d")
+    if(currentDate == date):
+        print("Dates same.")
+        if(currentTime == time):
+            print("Same time. ")
+            webbrowser.open_new_tab(url)
+            break
+
 
 
     
