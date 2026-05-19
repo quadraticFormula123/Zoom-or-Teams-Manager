@@ -8,7 +8,7 @@ window.geometry("520x520")#changes window size
 window.title("Meetings Manager") #setting the window title
 softwareIcon = PhotoImage(file='softwareIcon.png') #turning our png image into a photoImage and storing in softwareIcon
 window.iconphoto(True, softwareIcon) #giving our window softwareIcon as its iconphoto
-titleLabel = Label(window,text="Description...", fg="blue")
+titleLabel = Label(window,text="Description...")
 titleLabel.pack()#actually packs our label into the window
 window.mainloop() #displays our window
 
