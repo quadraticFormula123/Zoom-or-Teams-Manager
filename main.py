@@ -4,8 +4,10 @@ import time as time
 from tkinter import * #imports all avaliable stuff in tkinter
 
 window = Tk() #place window on computer screen, listens for events
-window.geometry("520x520")
-
+window.geometry("520x520")#changes window size
+window.title("Meetings Manager")
+softwareIcon = PhotoImage('softwareIcon.png')
+window.iconphoto(True, softwareIcon)
 window.mainloop() #displays our window
 
 another_meeting = input("Do you want to add a/another meeting?")
