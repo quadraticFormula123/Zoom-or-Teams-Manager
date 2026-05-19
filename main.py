@@ -1,6 +1,12 @@
 import webbrowser
 from datetime import datetime
 import time as time
+from tkinter import * #imports all avaliable stuff in tkinter
+
+window = Tk() #place window on computer screen, listens for events
+window.geometry("520x520")
+
+window.mainloop() #displays our window
 
 another_meeting = input("Do you want to add a/another meeting?")
 
