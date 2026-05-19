@@ -6,9 +6,9 @@ from tkinter import * #imports all avaliable stuff in tkinter
 window = Tk() #place window on computer screen, listens for events
 window.geometry("520x520")#changes window size
 window.title("Meetings Manager") #setting the window title
-softwareIcon = PhotoImage('softwareIcon.png') #turning our png image into a photoImage and storing in softwareIcon
+softwareIcon = PhotoImage(file='softwareIcon.png') #turning our png image into a photoImage and storing in softwareIcon
 window.iconphoto(True, softwareIcon) #giving our window softwareIcon as its iconphoto
-titleLabel = Label(window,text="Description...")
+titleLabel = Label(window,text="Description...", fg="black", font=("Arial", 50, "italic"))
 titleLabel.pack()#actually packs our label into the window
 window.mainloop() #displays our window
 
