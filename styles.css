@@ -3,26 +3,31 @@
 body {
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
-    background: linear-gradient(to right, #a43277, #ae3472, #b03471, #b23571, #bb386d,#c53a66, #cc3c63, #d33d5c, #d73e5a, #dd3f57);
-    background-size: cover;
+    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 50%, #bfe9ff 100%);
+    min-height: 100vh;
+    margin: 0;
 }
 
 .addNewMeeting {
-    background: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    width: 200px;
-    height: 200px;
-    font-size: 170px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 96px;
+    height: 96px;
+    font-size: 56px;
+    line-height: 86px;
     cursor: pointer;
-    transition: 0.5s ease, opacity 0.3s ease;
+    transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
 .addNewMeeting:active {
-    scale: 0.95;
-    transform: translateY(-5px);
+    transform: scale(0.95) translateY(-3px);
+    
 }
 
